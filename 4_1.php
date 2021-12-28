@@ -48,13 +48,56 @@
 
             //太空運算子 右大-1;一樣0;左大1
             echo 4<=>3;
+
+            echo "<br/>";
             
             //位元運算子 子串連接子
 
-            //自動型態轉換
+            //自動型態轉換，字串->整數->浮點數
+            $e = 100;
+            $f = 1.1;
+            $g = "30";
+            echo $e +  $f + $g;
             
+            //強迫型態轉換
+            //(int) (real)(double)(float)(string)(array)(object)
+
+            $h = (int)($e / $f);
+
+            echo "<br/>". $h. "<br/><br/>";
 
         ?>
+        <?php
+
+            //流程
+            $grade = 95;
+            if ($grade >= 90){
+                print $name. "成績： ". $grade . "很棒！<br/>";
+            }
+            elseif ( $grade >= 60){
+                print $name. "成績： ". $grade . "及格！ <br/>";
+            }else{
+                print $name."成績： ". $grade . "不及 格！ <br/>";
+            }
+
+            $GPA = 'C';
+            echo "<br/>學生成績： $GPA <br/>";
+            switch ($GPA){
+                case 'A':
+                    print "學生成績超過80<br/>";
+                    break;
+                case 'B':
+                    print "學生成績超過70<br/>";
+                    break;
+                case 'C':
+                    print "學生成績超過60<br/>";
+                    break;
+                default:
+                    print "學生成績不及格<br/>";
+
+            }
+        ?>
+        
         
     </body>
 </html>
