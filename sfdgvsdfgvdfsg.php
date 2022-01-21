@@ -8,13 +8,14 @@
     </head>
     <body>
         <?php
+            $x =1;
             class foo {
-                function do_foo() {
-                    echo "doing foo.";
+                function do_foo($a) {
+                    echo "doing foo." . $a;
                 }
             }
             $bar = new foo();
-            $bar -> do_foo();
+            $bar -> do_foo($x);
         ?>
     </body>
 </html>
