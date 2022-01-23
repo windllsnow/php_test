@@ -29,6 +29,6 @@
             }
         ?>
         <br/>
-        <a href="025.php">取得Cookie值</a>
+        <a href="025.php">取得Cookie值1</a>
     </body>
 </html>
