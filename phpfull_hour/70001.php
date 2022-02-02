@@ -2,7 +2,7 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8" />
-        <meta name="author" content="Hsuan_Chang (Jason) Teng" />
+        <meta name="author" content="Hsuan_Chang (Jason) Teng" /    >
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="robots" content="index,follow" />
         <meat name="rating" content="General" />
@@ -22,8 +22,9 @@
             $x = 1111;
             echo $x;
 
-            
-
+            echo pow(2,8);
+            echo "<br>";
+            echo rand();
         ?>
     </body>
 </html>
