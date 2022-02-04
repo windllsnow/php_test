@@ -8,6 +8,7 @@
         <meat name="rating" content="General" />
         <meta target="_self" />
         <meta name="description" content="" />
+        <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" type="image/png" href="" />
         <link rel="bookmark" href="" />
@@ -24,7 +25,7 @@
 
             echo pow(2,8);
             echo "<br>";
-            echo rand();
+            echo rand(1,999);
         ?>
     </body>
 </html>
