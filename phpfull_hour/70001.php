@@ -25,7 +25,7 @@
 
             echo pow(2,8);
             echo "<br>";
-            echo rand(1,999);
+            echo rand(10,999);
         ?>
     </body>
 </html>
