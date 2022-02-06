@@ -1,3 +1,39 @@
+<?php
+    if(isset($_POST['submit'])){
+        echo "<hr/>"."<br/>";
+        echo "yes it works, submit  function is ok<br/><hr/>";
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $maximun =10;
+        $minimun =3;
+
+        $name= array("Edwin","Peter","Student","Guest","Jane","Pika","Mohad","Maria","zzzz","0000");
+        if(in_array($username, $name)) {
+            echo " Hello , you can in now<br/><hr/>";
+            
+            if(strlen($password) > $minimun && strlen($password) < $maximun){
+                echo " password  OK   , your right  <br/><hr/>";
+
+            }else if ($password == "0000"){
+                echo "wowwelcome". $username  ."password unique, hello  to been here<br/><hr/>";
+                
+            }else {
+                echo "your password is ". "__secret____". "<br/>you won't know  haha !!<br/><hr/>";
+            }
+        }else{
+            echo " Sorry , you can't in now<br/><hr/>";
+        }
+    
+    } 
+
+
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="zh">
     <head>
@@ -26,6 +62,50 @@
             echo pow(2,8);
             echo "<br>";
             echo rand(10,999);
+            echo "<br>";
+            echo sqrt(100);
+            echo "<br>";
+            echo floor(4.5);
+            echo "<br>";
+            echo ceil(4.5);
+            echo "<br>";
+            echo round(4.5);
+            echo "<br>";
+
+
+            $string = "Hello student Do you like the class";
+            echo strlen($string)."<br>";
+            echo strtolower($string)."<br>";
+
+            $list = [32,342,423,232,321,64,346];
+            echo max($list). "<br/>";
+
+
+        ?>
+        <?php
+            echo rand(1,1000);
+            $string1 = "agfsadgfsadfhujawisohdfji";
+            $valueLength = strlen ($string1);
+            echo $valueLength. "<br>";
+
+            $values =  ['asdsfa',3242,'sdafas',$string1];
+            $found = in_array($string1,$values); /** 前者 有 在後者 裡 =>true */
+            if($found) {
+                echo "wow , so good ";
+
+            }else {
+                echo "Oops , GG　ｂｙｅ!!";
+            }
+        ?>
+        <form action = "action.php" method="post">
+                <input type = "text" placeholder = "Enter  Username"  name = "username">
+                <input type = "password" placeholder = "Enter Password"  name = "password">
+                <br/>
+                <input type = "submit"  name = "submit">
+
+        </form>
+        <?php
+            
         ?>
     </body>
 </html>
