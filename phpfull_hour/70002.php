@@ -1,6 +1,11 @@
-1b
-tTbb
-vb 
+<?php
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="zh">
     <head>
@@ -18,6 +23,8 @@ vb
         <title>70002</title>
     </head>
     <body>
-        hhhhhv
+        <?php
+            echo "<br/>"."Right now you see , wait for a  second"."<br/>"."<hr/>";
+        ?>
     </body>
 </html>
