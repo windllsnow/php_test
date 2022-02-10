@@ -24,7 +24,7 @@
     </head>
     <body>
         <?php
-            echo "<br/>"."Right now you see , wait for a  second"."<br/>"."<hr/>";
+            echo "<br/>"."Right now you GGGGsee , wait for a  second"."<br/>"."<hr/>";
         ?>
     </body>
 </html>
