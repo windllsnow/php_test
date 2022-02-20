@@ -24,7 +24,10 @@
     </head>
     <body>
         <?php
-            echo "<br/>"."Right now you GGGGsee , wait for a  second"."<br/>"."<hr/>";
+        $x =10;
+        echo $x;
+            echo "<br/>"."Right now you GdGGG-see , wait for a  second"."<br/>"."<hr/>";
         ?>
     </body>
 </html>
+
