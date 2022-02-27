@@ -26,7 +26,7 @@
         <?php
         $x =10;
         echo $x;
-            echo "<br/>"."Right now you GdGGG-see , wait for a  second"."<br/>"."<hr/>";
+            echo "<br/>"."Right nowww you GdGGG-see , wait for a  second"."<br/>"."<hr/>";
         ?>
     </body>
 </html>
